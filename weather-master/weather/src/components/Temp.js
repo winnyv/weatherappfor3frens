@@ -1,3 +1,5 @@
+import Quote from './Quote';
+
 const Temp = ({ normalTemp, lowTemp, highTemp, isMetric, status, city, country }) => {
     var textMainTemp;
     var textLowTemp;
@@ -24,10 +26,9 @@ const Temp = ({ normalTemp, lowTemp, highTemp, isMetric, status, city, country }
             </div>
 
             <div className="main">{textMainTemp}</div>
-
             <div className="status">{city}, {country}</div> <br/>
             <div className="status">{status}</div>
-            <div className="quote">Insert quote here</div>
+            <div className="quote"><Quote /></div>
         </div>
 
     )
