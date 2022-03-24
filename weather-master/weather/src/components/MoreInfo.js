@@ -16,8 +16,10 @@ const MoreInfo = ({weatherData,isMetric}) => {
       <div className="blockInfo">
         <Wind speed={weatherData['current']['wind_speed']} direction={weatherData['current']['wind_deg']+90}/>
       </div>
-
+      <p>Put weekly forecast here</p>
     </div>
+
+   
   )
 }
 
