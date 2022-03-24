@@ -1,6 +1,7 @@
 import Humidity from './Humidity.js'
 import Wind from './Wind.js'
 import WeeklyForecast from './WeeklyForecast.js'
+import RainForecast from './RainForecast.js'
 
 const MoreInfo = ({weatherData,isMetric}) => {
   return (
@@ -8,6 +9,7 @@ const MoreInfo = ({weatherData,isMetric}) => {
       <div className="linesInfo">
         <Humidity humidity={weatherData['current']['humidity']} cloud={weatherData['current']['clouds']} visibility={weatherData['current']['visibility']} isMetric={isMetric}/>
         <WeeklyForecast /> 
+        <RainForecast />
       </div>
       <br/>
 
