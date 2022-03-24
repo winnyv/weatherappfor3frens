@@ -28,7 +28,7 @@ const Temp = ({ normalTemp, lowTemp, highTemp, isMetric, status, city, country }
             <div className="main">{textMainTemp}</div>
             <div className="status">{city}, {country}</div> <br/>
             <div className="status">{status}</div>
-            <div className="quote"><Quote /></div>
+            <div className="quote"><Quote style="margin-bottom:60%"/></div>
         </div>
 
     )

@@ -34,8 +34,8 @@ class Quote extends React.Component
             <div className="App">
                 <div className="header">
                     <h1>Quote of the Day</h1>
-                    <p>{this.state.qInfo.quotes}</p>
-                    <p>-{this.state.qInfo.author}</p>
+                    <p className="quote-box">{this.state.qInfo.quotes}</p>
+                    <p className="quote-box">-{this.state.qInfo.author}</p>
                 </div>
             </div>
         );

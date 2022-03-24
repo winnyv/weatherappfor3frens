@@ -460,6 +460,7 @@ body {
 
 .box .header .reduce{
   font-size: 50%;
+  margin-bottom: 100%;
 }
 
 #temperature{
@@ -595,4 +596,9 @@ hr{
   text-align:center;
   margin-top:15%;
   position:absolute;
+}
+
+.quote-box{
+  margin-bottom:50%;
+  margin-right: 6%;
 }
