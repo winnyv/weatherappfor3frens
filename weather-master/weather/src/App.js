@@ -8,6 +8,7 @@ import Home from "./components/Home.js";
 import Map from "./components/Map.js";
 import Topbar from "./components/Topbar.js";
 import Searchbar from "./components/Searchbar.js";
+import HourlyWeather from "./components/HourlyWeather";
 
 function App() {
     //return the location based on query
@@ -128,6 +129,7 @@ function App() {
     }
 
     return (
+        
         <div className={largeFont ? "App largeFont" : "App"}>
             <Topbar toggle={toggleSide}
                 toggleSearch={toggleSearch} />
@@ -153,7 +155,14 @@ function App() {
                     <Map />
                 </SplideSlide>
             </Splide>
+            
+                <div>
+              <HourlyWeather />
+            </div>
+            
+
         </div>
+        
     );
 }
 
