@@ -1,12 +1,17 @@
-.rest, .dropdown, .button{
-    
+.rest,
+.dropdown,
+.button {
   margin-left: auto;
   margin-right: auto;
 }
 
-.button{
-
+.button {
   position: relative;
   display: inline-block;
+}
 
+.hourlyForecast {
+  border: 5px solid #aca7cb;
+  margin-right: 3px;
+  margin-left: 10;
 }
