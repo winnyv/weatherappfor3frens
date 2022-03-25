@@ -126,14 +126,10 @@ class WeeklyForecast extends React.Component
         <div className='phone'>
           <div class = "week">
 
-          <div class='p1'> <strong><p> Hourly Forecast </p></strong></div>
-
           <p>Weekly Forecast</p>
 
           <table class = "rest">
-            <button type="button" class="button" onClick={this.handleButtonClick}>
-              ▼
-            </button>
+            <button type="button" class="button" onClick={this.handleButtonClick}> ▼ </button>
             <tr>
               <th id = "currIcon"><img id = "currIcon" src={this.state.info.dailyIcon[1]} alt="curImage"></img></th>
               <th id = "sub">
