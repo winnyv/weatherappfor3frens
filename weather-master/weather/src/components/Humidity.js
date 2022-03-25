@@ -2,6 +2,7 @@
 
 const Humidity = ({hum,vis,cloud}) => {
 
+// it prints humidity thing 
     return (
     <div id="float-container">
         <div id="float-child">
