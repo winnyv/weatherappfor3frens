@@ -5,6 +5,7 @@ import axios from "axios";
 
 class RainForecast extends React.Component
 {
+  // iniitial state of the class
   state = 
   {
     coords : 
@@ -19,6 +20,8 @@ class RainForecast extends React.Component
     open: false
   };
 
+  // to enable button for the dropdown
+
   handleButtonClick = () =>{
     this.setState((state) =>{
       return{
@@ -29,6 +32,7 @@ class RainForecast extends React.Component
 
   componentDidMount()
   {
+    // finds the locatiom of the user using geolocation
     if(navigator.geolocation)
     {
       navigator.geolocation.getCurrentPosition((pos)=> 
@@ -50,6 +54,8 @@ class RainForecast extends React.Component
             hourlyRain : []
           }
 
+          // Using array hourly rain info is stored
+
           for (let i = 0; i < 25; i++) 
           {
             hRain.hourlyRain[i] = response.data.hourly[i].pop * 100;
@@ -64,6 +70,7 @@ class RainForecast extends React.Component
   }
 
   render(){
+    // Displays the information for the array
     return(
       <div class = "new">
         <div class = "week">
@@ -79,6 +86,7 @@ class RainForecast extends React.Component
               </th>
             </tr>
             
+            {/* This allows to keep track of the button by checking the open state*/}
             {this.state.open && (
               <div class ="dropdown">
                 <tr>

@@ -11,7 +11,7 @@ import "@splidejs/splide/dist/css/themes/splide-skyblue.min.css";
 import WeeklyForecast from './components/WeeklyForecast.js'
 import RainForecast from './components/RainForecast.js'
 import Home from "./components/Home.js";
-import Map from "./components/Map.js";
+import RainThunderMaps from "./components/RainThunderMaps";
 import Topbar from "./components/Topbar.js";
 import Searchbar from "./components/Searchbar.js";
 import HourlyWeather from "./components/HourlyWeather";
@@ -143,7 +143,7 @@ function App() {
                     pagination: true,
                 }}
             >   
-                {/* PAGE 1 */}
+                {/* 1 */}
                 <SplideSlide>
                     <Home weatherData={weatherData} city={city} country={country}/>
                     <div className="rainForecast">
@@ -152,17 +152,16 @@ function App() {
                     </div>
                 </SplideSlide>
 
-                {/* PAGE2 */}
+                {/* 2 */}
                 <SplideSlide>
                     <div className="weeklyForecast">
                         <WeeklyForecast />
-                        
                     </div>
                 </SplideSlide>
 
-                {/* PAGE3 */}
+                {/* 3 */}
                 <SplideSlide>
-                    <Map />
+                    <RainThunderMaps />
                 </SplideSlide>
             </Splide>
             

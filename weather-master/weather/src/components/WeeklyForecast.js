@@ -6,6 +6,7 @@ import axios from "axios";
 
 class WeeklyForecast extends React.Component 
 {
+  // iniitial state of the class: location and weather information are saved
   state = 
   {
     coords : 
@@ -30,6 +31,7 @@ class WeeklyForecast extends React.Component
     open: false
   };
 
+  // to enable button for the dropdown
   handleButtonClick = () =>{
     this.setState((state) =>{
       return{
@@ -40,6 +42,7 @@ class WeeklyForecast extends React.Component
 
   componentDidMount()
   {
+    // finds the location of the user using geolocation
     if(navigator.geolocation)
     {
       navigator.geolocation.getCurrentPosition((pos)=> 
@@ -51,6 +54,7 @@ class WeeklyForecast extends React.Component
         }
         this.setState({coords:curPos});
 
+        // user's location details is recieved using API
         axios.get(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${this.state.coords.latitude}&longitude=${this.state.coords.longitude}&localityLanguage=en`).then(cityresponse => 
         {
           let cinfo = 
@@ -62,6 +66,7 @@ class WeeklyForecast extends React.Component
           this.setState({ cityinfo : cinfo});
         })
 
+        // Weather forecast is recieved using API
         axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${this.state.coords.latitude}&lon=${this.state.coords.longitude}&cnt=7&exclude=hourly,minutely&appid=a46356085ca4d46617dbe82f8f470bab`).then(response => 
         {
           console.log(response);
@@ -90,12 +95,12 @@ class WeeklyForecast extends React.Component
 
   render() 
   {
-
     console.log(this.state.info.dailyIcon);
     console.log(this.state.info.dailyHumid);
     console.log(this.state.info.dailyTemp);
     console.log(this.state.info.dailyWind);
 
+    // To display the right days along with corresponding weather info
     const daysWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const d = new Date();
     let m = d.getMonth() + 1;

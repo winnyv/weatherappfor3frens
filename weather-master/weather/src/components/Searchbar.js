@@ -1,8 +1,8 @@
 import { AiOutlineSearch } from "react-icons/ai";
 
-const Searchbar = ({ showSearchBar, changeLocation, warningSearch }) => {
+// Allows the user to search for a location and displays the required weather forecast
+const Searchbar = ({ showSearchBar, changeLocation }) => {
 
-  //calling the correct function when the user searches
   const search = (event) => {
     event.preventDefault();
     changeLocation(document.getElementById("city").value)
