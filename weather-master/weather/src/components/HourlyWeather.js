@@ -26,19 +26,8 @@ const HourlyWeather = () => {
   return (
     hour &&
     hour.map((h) => (
-
-
-      <div>
-
-        <br></br>
-        <br></br>
-        <br></br>
-        Hour: {new Date(h.time).getHours()}:00 <br></br>
-        <br></br>
-
-        Cel: {h.temp_c} 
-        <br></br>
-        Far: {h.temp_f}
+      <div className="hourly-weather">
+        Hour: {new Date(h.time).getHours()}:00 Cel: {h.temp_c} Far: {h.temp_f}
       </div>
     ))
   );

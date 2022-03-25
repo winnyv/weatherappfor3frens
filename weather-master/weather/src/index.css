@@ -8,11 +8,6 @@ body {
   font-size: 130%;
 }
 
-.page {
-  width: 100vw;
-  height: 180vh;
-}
-
 .splide__pagination {
   top: 1% !important;
   position: fixed !important;
@@ -39,88 +34,6 @@ body {
 
 .splide__pagination__page:hover {
   background: #474554;
-}
-
-.sidebar {
-  position: fixed;
-  z-index: 10;
-  top: 0px;
-  height: 100vh;
-  left: -100vw;
-  width: 100vw;
-  font-size: 50%;
-  transition: left 0.3s ease-in-out;
-}
-
-.sidebar.open {
-  left: 0;
-}
-
-.sidebar .proper {
-  float: left;
-  width: 60vw;
-  height: inherit;
-  background-color: #ffffff;
-}
-
-.sidebar .proper img {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  z-index: 11;
-  width: 15vh;
-}
-
-.sidebar .proper .label {
-  width: 82%;
-  padding: 4%;
-  margin-top: 4%;
-  margin-left: 4%;
-  border: 1px rgba(0, 0, 0, 0.233) solid;
-  border-radius: 10px;
-  font-size: 180%;
-  background-color: #aca7cb71;
-}
-
-.sidebar .proper .label button {
-  margin-top: 4%;
-  font-size: 120%;
-  border-radius: 5px;
-  width: 90%;
-  background-color: white;
-}
-
-.sidebar .proper .label #selected {
-  font-weight: bold;
-  background-color: #aca7cb;
-}
-
-.sidebar .proper .label svg {
-  width: 25%;
-  height: 25%;
-}
-
-.sidebar .proper #closeSmall {
-  width: 92%;
-  padding: 4%;
-  margin-top: 20%;
-  margin-left: 0%;
-  border: none;
-  border-radius: 10px;
-  font-size: 180%;
-  background-color: #aca7cb71;
-}
-.sidebar .proper #closeSmall svg {
-  width: 25%;
-  height: 25%;
-}
-
-.sidebar #close {
-  float: right;
-  width: 40vw;
-  height: 100vh;
-  background: none;
-  border: none;
-  backdrop-filter: blur(2px);
 }
 
 #topbar {
@@ -217,17 +130,7 @@ body {
   border: none;
 }
 
-#sidebarButton {
-  margin-top: 1.8vh;
-  margin-left: 1.8vh;
-  background: none;
-  border: none;
-}
 
-#sidebarButton svg {
-  width: 1.8em;
-  height: 1.8em;
-}
 
 .home {
   overflow: hidden;
@@ -248,6 +151,11 @@ body {
 #loading h1 {
   font-size: 300%;
   color: white;
+}
+
+.page {
+  width: 100vw;
+  height: 180vh;
 }
 
 #HomePart2 {
@@ -327,10 +235,6 @@ body {
   height: inherit;
 }
 
-.forecast {
-  padding-top: 12%;
-  background-color: rgb(255, 255, 255);
-}
 .map {
   background-color: #ffffff;
 }
@@ -371,6 +275,7 @@ body {
 #float-child {
   width: 50%;
   float: left;
+  text-align:center;
   padding-top: 0px;
 }
 
@@ -385,41 +290,16 @@ body {
   margin-bottom: 0%;
 }
 
-#Sunrise {
-  text-align: center;
-  width: 25%;
-}
-
-#Sunset {
-  text-align: center;
-  width: 25%;
-}
 
 #CurTime {
   text-align: center;
-  font-size: 30pt;
+  font-size: 35pt;
 }
 
-#GoldenHour {
-  font-size: 120%;
-  width: 100%;
-}
 
 #ddtable {
   width: 100%;
   padding: 0%;
-}
-
-#Dawn {
-  width: 30%;
-}
-
-#ddfiller {
-  width: 40%;
-}
-
-#Dusk {
-  width: 30%;
 }
 
 .day {
@@ -477,6 +357,7 @@ body {
 }
 
 #mainTemp {
+  
   width: 87%;
 }
 
@@ -490,11 +371,12 @@ body {
 }
 
 #mainTemp .secondary .cold {
-  color: rgb(41, 248, 255);
+  color: rgb(112, 227, 231);
 }
 
 #mainTemp .secondary .hot {
-  color: rgb(253, 114, 114);
+  
+  color: rgb(219, 35, 35);
 }
 
 #mainTemp .status {
@@ -502,12 +384,7 @@ body {
   margin-left: 8%;
 }
 
-.smallfore {
-  padding-top: 3vh;
-  padding-left: 2vh;
-  padding-right: 2vh;
-  height: 24vh;
-}
+
 
 hr {
   height: 1px;
@@ -529,35 +406,17 @@ hr {
   font-weight: bolder;
 }
 
-.temperature-forecast {
-  margin-left: 10%;
-  margin-bottom: 2vh;
-  text-align: left;
-  font-weight: bolder;
-}
-
-.precipitation-forecast {
-  margin-left: 10%;
-  margin-bottom: 2vh;
-  text-align: left;
-  font-weight: bolder;
-}
-
-.sunrise-forecast {
-  margin-left: 10%;
-  text-align: left;
-  font-weight: bolder;
-}
 
 .currhumidity {
+  margin-left:10%;
   padding-top: 1.5vh;
   text-align: left;
 }
 
 .cloud {
   padding-top: 1.5vh;
-  margin-right: 20%;
-  text-align: right;
+  margin: left 50px;
+  text-align: center;
 }
 
 .humidity {
@@ -568,32 +427,15 @@ hr {
   font-weight: bolder;
 }
 
-.speed {
-  margin-left: 6%;
-  margin-bottom: 2vh;
-  text-align: left;
-  font-weight: bolder;
-}
-
-.sunset {
-  margin-left: 6%;
-  margin-bottom: 2vh;
-  text-align: left;
-  font-weight: bolder;
-}
-
-.forecast {
-  padding-top: 12%;
-}
-
 .scrollDown {
   color: rgba(128, 128, 128, 0.794);
   font-weight: bold;
 }
 
 .quote {
+  border-radius: 10%;
   text-align: center;
-  background-color: #474554;
+  background-color: #47455460;
 }
 
 #quoteheading {
@@ -626,4 +468,8 @@ hr {
 
 .thickFont {
   font-weight: bold;
+}
+
+.hourly-weather{
+  margin-bottom:10%;
 }
