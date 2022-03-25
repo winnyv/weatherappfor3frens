@@ -1,19 +1,19 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   height: 160vh !important;
 }
 
-.largeFont{
+.largeFont {
   font-size: 130%;
 }
 
-.page{
+.page {
   width: 100vw;
   height: 180vh;
 }
 
-.splide__pagination{
+.splide__pagination {
   top: 1% !important;
   position: fixed !important;
   height: 5% !important;
@@ -22,19 +22,19 @@ body {
   width: 100% !important;
 }
 
-.splide__pagination li{
+.splide__pagination li {
   width: 25% !important;
 }
 
-.splide__pagination__page{
+.splide__pagination__page {
   width: 80% !important;
   height: 25px !important;
   border-radius: 3px !important;
 }
 
-.splide__pagination__page.is-active{
+.splide__pagination__page.is-active {
   transform: none !important;
-  background: #ACA7CB;
+  background: #aca7cb;
 }
 
 .splide__pagination__page:hover {
@@ -50,28 +50,27 @@ body {
   width: 100vw;
   font-size: 50%;
   transition: left 0.3s ease-in-out;
-  
 }
 
 .sidebar.open {
   left: 0;
 }
 
-.sidebar .proper{
+.sidebar .proper {
   float: left;
   width: 60vw;
   height: inherit;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-.sidebar .proper img{
+.sidebar .proper img {
   margin-top: 5vh;
   margin-bottom: 5vh;
   z-index: 11;
   width: 15vh;
 }
 
-.sidebar .proper .label{
+.sidebar .proper .label {
   width: 82%;
   padding: 4%;
   margin-top: 4%;
@@ -82,7 +81,7 @@ body {
   background-color: #aca7cb71;
 }
 
-.sidebar .proper .label button{
+.sidebar .proper .label button {
   margin-top: 4%;
   font-size: 120%;
   border-radius: 5px;
@@ -90,17 +89,17 @@ body {
   background-color: white;
 }
 
-.sidebar .proper .label #selected{
-  font-weight: bold; 
-  background-color: #ACA7CB;
+.sidebar .proper .label #selected {
+  font-weight: bold;
+  background-color: #aca7cb;
 }
 
-.sidebar .proper .label svg{
+.sidebar .proper .label svg {
   width: 25%;
   height: 25%;
 }
 
-.sidebar .proper #closeSmall{
+.sidebar .proper #closeSmall {
   width: 92%;
   padding: 4%;
   margin-top: 20%;
@@ -110,12 +109,12 @@ body {
   font-size: 180%;
   background-color: #aca7cb71;
 }
-.sidebar .proper #closeSmall svg{
+.sidebar .proper #closeSmall svg {
   width: 25%;
   height: 25%;
 }
 
-.sidebar #close{
+.sidebar #close {
   float: right;
   width: 40vw;
   height: 100vh;
@@ -124,7 +123,7 @@ body {
   backdrop-filter: blur(2px);
 }
 
-#topbar{
+#topbar {
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -134,7 +133,7 @@ body {
   text-align: left;
 }
 
-.Searchbar{
+.Searchbar {
   position: fixed;
   z-index: 3;
   width: 100%;
@@ -145,73 +144,72 @@ body {
   transition: left 0.3s ease-in-out;
 }
 
-.Searchbar .error{
+.Searchbar .error {
   color: rgb(255, 0, 0);
   text-align: center;
 }
 
-.Searchbar .error h3{
+.Searchbar .error h3 {
   background-color: rgba(255, 255, 255, 0.918);
   border-radius: 2px;
   margin: 10%;
   padding: 2%;
 }
 
-
 .Searchbar.open {
   left: 0;
 }
 
-#SearchTable{
+#SearchTable {
   margin-top: 1vh;
   height: 5%;
-  width:100%;
+  width: 100%;
 }
 
-#SearchInputTable{
-  width:70%;
+#SearchInputTable {
+  width: 70%;
 }
 
-#SearchInput{
+#SearchInput {
   margin-left: 6%;
 }
 
-#SearchInput input{
-  font-size:1.5em;
+#SearchInput input {
+  font-size: 1.5em;
   padding: 4px;
   border-radius: 4%;
   border: none;
   width: 90%;
-  background-color: #ACA7CB;
+  background-color: #aca7cb;
 }
 
-#SearchTable svg{
+#SearchTable svg {
   width: 2em;
   height: 2em;
 }
 
-#SearchTable button{
+#SearchTable button {
   margin-left: 10%;
   background: none;
   border: none;
 }
 
-#SearchCancelTable{
-  width:15%;
+#SearchCancelTable {
+  width: 15%;
   background: none;
   border: none;
 }
 
-#search svg{
+#search svg {
   width: 2em;
   height: 2em;
 }
 
-#SearchComfirmTable{
+#SearchComfirmTable {
   width: 15%;
 }
 
-#search{
+#search {
   margin-top: 1.8vh;
   margin-right: 1.8vh;
   float: right;
@@ -219,49 +217,48 @@ body {
   border: none;
 }
 
-#sidebarButton{
+#sidebarButton {
   margin-top: 1.8vh;
   margin-left: 1.8vh;
   background: none;
   border: none;
 }
 
-#sidebarButton svg{
+#sidebarButton svg {
   width: 1.8em;
   height: 1.8em;
 }
 
-
-.home{
-  overflow:hidden;
+.home {
+  overflow: hidden;
 }
 
-#loading{
+#loading {
   padding-top: 40vh;
   margin: 0%;
   top: 0;
   width: 100%;
   height: 100vh;
   background-size: 150vw;
-  background-image: url('//upload.wikimedia.org/wikipedia/commons/2/2f/Clouds.gif');
+  background-image: url("//upload.wikimedia.org/wikipedia/commons/2/2f/Clouds.gif");
   background-attachment: fixed;
   text-align: center;
 }
 
-#loading h1{
+#loading h1 {
   font-size: 300%;
   color: white;
 }
 
-#HomePart2{
+#HomePart2 {
   top: 0;
   width: 100%;
   height: 100vh;
   background-size: 300vw;
-  background-image: url('//upload.wikimedia.org/wikipedia/commons/2/2f/Clouds.gif');
+  background-image: url("//upload.wikimedia.org/wikipedia/commons/2/2f/Clouds.gif");
 }
 
-#moreinfo{
+#moreinfo {
   margin-top: 0vh;
   padding-top: 1vh;
   width: 100%;
@@ -270,7 +267,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-#temperature{
+#temperature {
   padding-top: 12vh;
   padding-left: 10vw;
   width: 80vw;
@@ -278,15 +275,14 @@ body {
   padding-bottom: 59vh;
 }
 
-
-#hours{
+#hours {
   height: 10vh;
   width: 95vw;
   padding-left: 2.5vw;
   margin-top: 5%;
 }
 
-.linesInfo{
+.linesInfo {
   height: 6vh;
   width: 88vw;
   padding-left: 6vw;
@@ -294,11 +290,11 @@ body {
   padding-bottom: 1vh;
 }
 
-.ext{
+.ext {
   height: 12vh !important;
 }
 
-.blockInfo{
+.blockInfo {
   height: 18vh;
   width: 88vw;
   padding-left: 6vw;
@@ -306,27 +302,23 @@ body {
   padding-bottom: 1vh;
 }
 
-.smallfore{
+.smallfore {
   padding-top: 3vh;
   padding-left: 2vh;
   padding-right: 2vh;
   height: 24vh;
 }
 
-
 .weeklyForecast {
-  margin-top: 20%;
+  margin-top: 20% !important;
   text-align: center;
 }
-
 .rainForecast {
   margin-top: -100%;
   text-align: center;
-  
 }
 
-
-.coming{
+.coming {
   background-color: lightgray;
   border: 2px darkgrey solid;
   color: black;
@@ -335,19 +327,19 @@ body {
   height: inherit;
 }
 
-.forecast{
+.forecast {
   padding-top: 12%;
   background-color: rgb(255, 255, 255);
 }
-.map{
+.map {
   background-color: #ffffff;
 }
 
-.map p{
+.map p {
   margin-top: 0.8%;
 }
 
-.map div{
+.map div {
   font-size: 2em;
   width: 100%;
   padding-top: 4%;
@@ -358,12 +350,12 @@ body {
   top: 3%;
 }
 
-.map iframe{
+.map iframe {
   padding-top: 21%;
   height: inherit;
 }
 
-.map #topbar{
+.map #topbar {
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -371,72 +363,70 @@ body {
   background-color: rgb(255, 255, 255);
   text-align: left;
 }
- 
- #float-container b{
-   font-size:large;
- }
- 
- #float-child{
-   width: 50%;
-   float: left;
-   padding-top: 0px;
- }
 
-
- #TimesTop {
-   margin-top: -40%;
-   color: white;
- }
- 
- #TableTime {
-   width: 100%;
-   padding-bottom: 0%;
-   margin-bottom: 0%;
- }
- 
- #Sunrise {
-   text-align: center;
-   width: 25%;
- }
- 
- #Sunset {
-   text-align: center;
-   width: 25%;
- }
- 
- #CurTime{
-   text-align: center;
-   font-size: 30pt; 
- }
- 
- #GoldenHour{
-   font-size: 120%;
-   width: 100%;
- }
- 
- #ddtable {
-   width: 100%;
-   padding: 0%;
- }
- 
- #Dawn{
-   width: 30%;
- }
- 
-#ddfiller{
-   width: 40%;
+#float-container b {
+  font-size: large;
 }
 
- #Dusk{
-   width: 30%;
- }
-
-
- .day{
-  float:left;
+#float-child {
+  width: 50%;
+  float: left;
+  padding-top: 0px;
 }
 
-.box{
+#TimesTop {
+  margin-top: -40%;
+  color: white;
+}
+
+#TableTime {
+  width: 100%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+
+#Sunrise {
+  text-align: center;
+  width: 25%;
+}
+
+#Sunset {
+  text-align: center;
+  width: 25%;
+}
+
+#CurTime {
+  text-align: center;
+  font-size: 30pt;
+}
+
+#GoldenHour {
+  font-size: 120%;
+  width: 100%;
+}
+
+#ddtable {
+  width: 100%;
+  padding: 0%;
+}
+
+#Dawn {
+  width: 30%;
+}
+
+#ddfiller {
+  width: 40%;
+}
+
+#Dusk {
+  width: 30%;
+}
+
+.day {
+  float: left;
+}
+
+.box {
   border: 2px darkgray solid;
   border-radius: 8px;
   background-color: rgb(100, 139, 175);
@@ -444,175 +434,169 @@ body {
   text-align: left;
 }
 
-.box .header{
+.box .header {
   margin-top: 2vh;
   margin-right: 4%;
   font-size: 200%;
   font-weight: bold;
 }
 
-.box div{
+.box div {
   margin-left: 4%;
   margin-top: 1vh;
 }
 
-.box .arrow{
+.box .arrow {
   float: right;
   width: 10vh;
   margin: 5vh 5% 0% 0%;
 }
 
-.box .moon{
+.box .moon {
   width: 6.5vh;
 }
 
-.box .main{
+.box .main {
   width: 13vh;
 }
 
-.box .header .reduce{
+.box .header .reduce {
   font-size: 50%;
   margin-bottom: 100%;
 }
 
-#temperature{
+#temperature {
   padding-top: 10vh;
   padding-left: 10vw;
   width: 85%;
   height: 16vh;
   padding-bottom: 59vh;
   font-size: xx-large;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
-
 }
 
-#mainTemp{
+#mainTemp {
   width: 87%;
 }
 
-#mainTemp .main{
+#mainTemp .main {
   font-size: 250%;
 }
 
-#mainTemp .secondary{
+#mainTemp .secondary {
   float: right;
   margin-top: 3%;
 }
 
-#mainTemp .secondary .cold{
+#mainTemp .secondary .cold {
   color: rgb(41, 248, 255);
 }
 
-#mainTemp .secondary .hot{
-  color: rgb(253, 114, 114)
+#mainTemp .secondary .hot {
+  color: rgb(253, 114, 114);
 }
 
-#mainTemp .status{
+#mainTemp .status {
   float: left;
   margin-left: 8%;
 }
 
-.smallfore{
+.smallfore {
   padding-top: 3vh;
   padding-left: 2vh;
   padding-right: 2vh;
   height: 24vh;
 }
 
-
-hr{
-  height:1px;
+hr {
+  height: 1px;
   border: none;
   background-color: darkgray;
 }
 
-#float-container{
-  margin-left:10%;
+#float-container {
+  margin-left: 10%;
   margin-bottom: 5%;
 }
 
-#current_date{
+#current_date {
   margin: 1vh;
   border-radius: 5px;
   background-color: #aca7cbb4;
-  text-align:center;
+  text-align: center;
   font-size: large;
   font-weight: bolder;
 }
 
-.temperature-forecast{
-  margin-left:10%;
-  margin-bottom:2vh;
+.temperature-forecast {
+  margin-left: 10%;
+  margin-bottom: 2vh;
   text-align: left;
   font-weight: bolder;
 }
 
-.precipitation-forecast{
-  margin-left:10%;
-  margin-bottom:2vh;
+.precipitation-forecast {
+  margin-left: 10%;
+  margin-bottom: 2vh;
   text-align: left;
   font-weight: bolder;
 }
 
-.sunrise-forecast{
-  margin-left:10%;
+.sunrise-forecast {
+  margin-left: 10%;
   text-align: left;
   font-weight: bolder;
 }
 
-.currhumidity{
+.currhumidity {
   padding-top: 1.5vh;
   text-align: left;
 }
 
-.cloud{
+.cloud {
   padding-top: 1.5vh;
   margin-right: 20%;
   text-align: right;
 }
 
-.humidity{
+.humidity {
   padding-top: 0%;
-  margin-left:6%;
-  margin-bottom:2vh;
+  margin-left: 6%;
+  margin-bottom: 2vh;
   text-align: left;
   font-weight: bolder;
 }
 
-.speed{
- margin-left:6%;
- margin-bottom:2vh;
- text-align: left;
- font-weight: bolder;
+.speed {
+  margin-left: 6%;
+  margin-bottom: 2vh;
+  text-align: left;
+  font-weight: bolder;
 }
 
-.sunset{
- margin-left:6%;
- margin-bottom:2vh;
- text-align: left;
- font-weight: bolder;
+.sunset {
+  margin-left: 6%;
+  margin-bottom: 2vh;
+  text-align: left;
+  font-weight: bolder;
 }
 
-
-.forecast{
+.forecast {
   padding-top: 12%;
 }
 
-.scrollDown{
+.scrollDown {
   color: rgba(128, 128, 128, 0.794);
   font-weight: bold;
 }
 
-.quote{
-  border:black;
-  border-radius:10%;
-  text-align:center;
-  background-color: #47455470;
+.quote {
+  text-align: center;
+  background-color: #474554;
 }
 
-#quoteheading
-{
+#quoteheading {
   text-align: center;
   padding: 0%;
   font-size: 40px;
@@ -620,23 +604,26 @@ hr{
   margin-bottom: 5%;
 }
 
-.quote-box{
+.quote-box {
   text-align: left;
   width: fit-content;
   font-size: 20px;
 }
 
-.quote-box-author{
+.quote-box-author {
   text-align: left;
-  font-style:italic;
+  font-style: italic;
   font-size: 20px;
   margin-top: 5%;
 }
 
-.hourly-weather{
-  margin-top:3%;
+.hourlyForecast {
+  border: 5px solid #aca7cb;
+  margin-right: 3px;
+  margin-left: 10;
+  margin-bottom: 10px;
 }
 
-.hourly-container{
-  margin-top:10%;
+.thickFont {
+  font-weight: bold;
 }
