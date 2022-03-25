@@ -1,8 +1,10 @@
-const Wind = ({ speed, direction }) => {
+// Display wind info by using arguments passed.
+
+const Wind = ({ speed, dir }) => {
     return (
         <div className="box">
 
-            <img className="arrow" src="/windarrow.png" alt={`wind arrow pointing at ${direction}`} style={{ transform: `rotate(${direction}deg)` }} />
+            <img className="arrow" src="/windarrow.png" alt={`wind arrow pointing at ${dir}`} style={{ transform: `rotate(${dir}deg)` }} />
 
             <div className="header">Wind:</div>
 

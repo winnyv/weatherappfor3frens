@@ -1,10 +1,10 @@
-import Landing from './Landing.js'
+import HomePart2 from './HomePart2'
 
-
+// The homepage will access HomePart2 to display componenents 
 const Home = ({weatherData,isMetric,city,country}) => {
   return (
     <div className="page home">
-      <Landing weatherData={weatherData} isMetric={isMetric} city={city} country={country}/>
+      <HomePart2 weatherData={weatherData} isMetric={isMetric} city={city} country={country}/>
     </div>
   )
 }

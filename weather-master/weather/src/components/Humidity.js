@@ -1,13 +1,12 @@
-const Humidity = ({humidity,visibility,cloud}) => {
+// Displaying humidity, visibility, cloud
 
-    var length;
-
+const Humidity = ({hum,vis,cloud}) => {
 
     return (
     <div id="float-container">
         <div id="float-child">
-            <div className="currhumidity">Humidity: <b>{humidity}%</b> <br></br>
-            Visibility: <b>{visibility}</b></div>  
+            <div className="currhumidity">Humidity: <b>{hum}%</b> <br></br>
+            Visibility: <b>{vis}</b></div>  
         </div>
         <div id="float-child">
             <div className="cloud">Cloud cover:<br></br><b>{cloud}%</b></div>

@@ -3,6 +3,7 @@ import React from 'react';
 
 class Quote extends React.Component
 {
+    // iniitial state of the class
     state =
     {
         qInfo:
@@ -14,6 +15,7 @@ class Quote extends React.Component
 
     componentDidMount()
     {
+        // Gets the quote and the author from the API
         axios.get(`https://quotes.rest/qod?language=en`).then(res =>
         {
             let q = 
@@ -31,6 +33,7 @@ class Quote extends React.Component
     render()
     {
         return(
+            // Displays the quote and the author
             <div className="App">
                 <div className="header">
                     <p id = "quoteheading">Quote of the Day</p>

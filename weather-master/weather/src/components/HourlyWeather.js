@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-// state makes sure it set latitube,longitude and setHour
+// state makes sure it set latitude,longitude and setHour
 const HourlyWeather = () => {
   const [latitude, setLatitude] = useState(0);
   const [longitude, setLongitude] = useState(0);
