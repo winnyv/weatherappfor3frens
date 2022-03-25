@@ -1,5 +1,5 @@
 import Humidity from './Humidity.js'
-
+import Wind from './Wind.js'
 
 const MoreInfo = ({weatherData,isMetric}) => {
   return (
