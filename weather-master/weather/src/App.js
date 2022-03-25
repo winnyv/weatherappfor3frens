@@ -1,47 +1,41 @@
+// import styling
 import "./App.css";
 import "./index.css";
+
+// Allows to setup page for the app
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { useEffect, useRef, useState } from "react";
-
 import "@splidejs/splide/dist/css/themes/splide-skyblue.min.css";
 
+// import components of the app
+import WeeklyForecast from './components/WeeklyForecast.js'
+import RainForecast from './components/RainForecast.js'
 import Home from "./components/Home.js";
 import Map from "./components/Map.js";
 import Topbar from "./components/Topbar.js";
 import Searchbar from "./components/Searchbar.js";
 import HourlyWeather from "./components/HourlyWeather";
 
-import WeeklyForecast from './components/WeeklyForecast.js'
-import RainForecast from './components/RainForecast.js'
-
 function App() {
-    //return the location based on query
+    // Location of the user
     const getJSONLocation = async (query) => {
-        const url = `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=1&appid=c771b4a71a2bb5a57117433fcf3558dd`;
-        const response = await fetch(url);
-        return await (await response.json());
+        const res = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=1&appid=c771b4a71a2bb5a57117433fcf3558dd`);
+        return await (res.json());
     }
 
-    //set the weatherData to the response to the API
+    // set the weatherData to the response to the API
     const getJSONWeather = async (query) => {
-        const loc = await getJSONLocation(query);
-        if ("0" in loc) {
-            setCity(loc[0]["name"])
-            setCountry(loc[0]["country"])
-            //if 0 is in the json response that means there was at least one
-            // location mathing the query
-
+        const location = await getJSONLocation(query);
+        if ("0" in location) {
+            setCity(location[0]["name"])
+            setCountry(location[0]["country"])
             //check if the location fetch was succefull
-            const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${loc["0"]["lat"]}&lon=${loc["0"]["lon"]}&cnt=7&appid=c771b4a71a2bb5a57117433fcf3558dd`;
-            const response = await fetch(url);
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${location["0"]["lat"]}&lon=${location["0"]["lon"]}&cnt=7&appid=c771b4a71a2bb5a57117433fcf3558dd`);
             setWeatherData(await response.json());
             return true
         }
         return false
     }
-
-    //state that keeps the setting of Metric or Imperial
-    const [isMetric, setIsMetric] = useState(true);
 
     //state that keeps that setting of large font
     const [largeFont, setLF] = useState(false);
@@ -154,15 +148,13 @@ function App() {
                     <Home weatherData={weatherData} city={city} country={country}/>
                     <div className="rainForecast">
                         <RainForecast />
-                        
                     </div>
                 </SplideSlide>
 
                 {/* PAGE2 */}
                 <SplideSlide>
                     <div className="weeklyForecast">
-                        <WeeklyForecast />
-                         <HourlyWeather/>
+                        <WeeklyForecast /> 
                     </div>
                 </SplideSlide>
 
