@@ -8,7 +8,6 @@ import Home from "./components/Home.js";
 import Map from "./components/Map.js";
 import Topbar from "./components/Topbar.js";
 import Searchbar from "./components/Searchbar.js";
-// import WeeklyForecast from './WeeklyForecast.js'
 import HourlyWeather from "./components/HourlyWeather";
 
 import WeeklyForecast from './components/WeeklyForecast.js'
