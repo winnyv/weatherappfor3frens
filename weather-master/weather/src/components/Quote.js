@@ -33,9 +33,9 @@ class Quote extends React.Component
         return(
             <div className="App">
                 <div className="header">
-                    <h1>Quote of the Day</h1>
+                    <p id = "quoteheading">Quote of the Day</p>
                     <p className="quote-box">{this.state.qInfo.quotes}</p>
-                    <p className="quote-box">-{this.state.qInfo.author}</p>
+                    <p className="quote-box-author">-{this.state.qInfo.author}</p>
                 </div>
             </div>
         );
