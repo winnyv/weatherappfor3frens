@@ -1,4 +1,5 @@
 import "./App.css";
+import "./index.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { useEffect, useRef, useState } from "react";
 
@@ -85,7 +86,7 @@ function App() {
             }
 
             buttons = document.querySelectorAll("[aria-label=\"Go to slide 2\"]");
-            text = document.createTextNode("Training");
+            text = document.createTextNode("Weekly");
             if (!buttons[0].hasChildNodes()) {
                 buttons[0].appendChild(text);
             }
@@ -151,13 +152,16 @@ function App() {
                 {/* PAGE 1 */}
                 <SplideSlide>
                     <Home weatherData={weatherData} city={city} country={country}/>
-                    
+                    <div className="rainForecast">
+                        <RainForecast />
+                    </div>
                 </SplideSlide>
 
                 {/* PAGE2 */}
                 <SplideSlide>
-                    <WeeklyForecast /> 
-                    <RainForecast />
+                    <div className="weeklyForecast">
+                        <WeeklyForecast /> 
+                    </div>
                 </SplideSlide>
 
                 {/* PAGE3 */}

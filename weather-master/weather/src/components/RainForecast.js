@@ -67,7 +67,7 @@ class RainForecast extends React.Component
     return(
       <div class = "new">
         <div class = "week">
-          <div class='p1'> <strong><p> Rain Forecast </p></strong></div>
+          <div class='p1'> <strong><p> Hourly Rain Forecast </p></strong></div>
           <table class = "rest">
             <button type="button" class="button" onClick={this.handleButtonClick}>
               ▼

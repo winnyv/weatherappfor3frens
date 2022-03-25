@@ -126,7 +126,7 @@ class WeeklyForecast extends React.Component
         <div className='phone'>
           <div class = "week">
 
-          <p>Weekly Forecast</p>
+          <p><strong>Weekly Forecast</strong></p>
 
           <table class = "rest">
             <button type="button" class="button" onClick={this.handleButtonClick}> ▼ </button>
