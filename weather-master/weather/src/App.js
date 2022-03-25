@@ -154,7 +154,8 @@ function App() {
                 {/* PAGE2 */}
                 <SplideSlide>
                     <div className="weeklyForecast">
-                        <WeeklyForecast /> 
+                        <WeeklyForecast />
+                        <HourlyWeather/>
                     </div>
                 </SplideSlide>
 
