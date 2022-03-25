@@ -320,7 +320,7 @@ body {
 }
 
 .rainForecast {
-  margin-top: -145%;
+  margin-top: -100%;
   text-align: center;
   
 }
@@ -605,8 +605,10 @@ hr{
 }
 
 .quote{
+  border:black;
+  border-radius:10%;
   text-align:center;
-  background-color: #474554;
+  background-color: #47455470;
 }
 
 #quoteheading
@@ -629,4 +631,12 @@ hr{
   font-style:italic;
   font-size: 20px;
   margin-top: 5%;
+}
+
+.hourly-weather{
+  margin-top:3%;
+}
+
+.hourly-container{
+  margin-top:10%;
 }
