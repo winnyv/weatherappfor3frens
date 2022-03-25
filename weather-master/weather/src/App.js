@@ -11,6 +11,9 @@ import Searchbar from "./components/Searchbar.js";
 // import WeeklyForecast from './WeeklyForecast.js'
 import HourlyWeather from "./components/HourlyWeather";
 
+import WeeklyForecast from './components/WeeklyForecast.js'
+import RainForecast from './components/RainForecast.js'
+
 function App() {
     //return the location based on query
     const getJSONLocation = async (query) => {
@@ -161,8 +164,10 @@ function App() {
               <HourlyWeather />
               {/* <WeeklyForecast /> */}
             </div>
-            
-
+            <div class = "forecast">
+                <WeeklyForecast /> 
+                <RainForecast />
+            </div>
         </div>
         
     );
