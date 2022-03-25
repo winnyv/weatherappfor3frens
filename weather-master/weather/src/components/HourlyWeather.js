@@ -1,16 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-
+// state makes sure it set latitube,longitude and setHour
 const HourlyWeather = () => {
   const [latitude, setLatitude] = useState(0);
   const [longitude, setLongitude] = useState(0);
   const [hour, setHour] = useState(null);
-
+//it saves the position to state by postition cordinates
   const savePositionToState = (position) => {
     setLatitude(position.coords.latitude);
     setLongitude(position.coords.longitude);
   };
-
+// the hourly forcaste is fetched from the api 
   useEffect(() => {
     window.navigator.geolocation.getCurrentPosition(savePositionToState);
     const fetchData = async () => {
@@ -19,9 +19,10 @@ const HourlyWeather = () => {
       );
       setHour(data.data.forecast.forecastday[0].hour);
     };
+    // fetched lat and lon ,hour
     fetchData();
   }, [latitude, longitude, hour]);
-
+// displays the time and temperature in calvin and farenhiet
   return (
     hour &&
     hour.map((h) => (
