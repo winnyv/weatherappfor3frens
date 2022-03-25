@@ -7,7 +7,7 @@ const Humidity = ({humidity,visibility,cloud}) => {
     <div id="float-container">
         <div id="float-child">
             <div className="currhumidity">Humidity: <b>{humidity}%</b> <br></br>
-            Visibility: <b>{length}</b></div>  
+            Visibility: <b>{visibility}</b></div>  
         </div>
         <div id="float-child">
             <div className="cloud">Cloud cover:<br></br><b>{cloud}%</b></div>

@@ -161,6 +161,7 @@ function App() {
             
                 <div>
               <HourlyWeather />
+              {/* <WeeklyForecast /> */}
             </div>
             <div class = "forecast">
                 <WeeklyForecast /> 
