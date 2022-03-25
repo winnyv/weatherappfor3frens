@@ -9,7 +9,7 @@ var interval;
 const Landing = ({weatherData, isMetric, city, country}) => {
   const[time, setTime] = useState(0)
 
-  //refreshing the time every 3 seconds taking into account the correct timezone
+  //according to correct time zone it refreshes the app every 3 seconds 
   useEffect(() => {
     const refreshTime = () => {
       setTime(((new Date()).getTime() / 1000)-((new Date()).getTimezoneOffset() * 60)+weatherData['timezone_offset']);
@@ -18,7 +18,7 @@ const Landing = ({weatherData, isMetric, city, country}) => {
     refreshTime();
     interval = setInterval(refreshTime, 10000)
   }, [weatherData]);
-  
+  //for thr display
   return (
     <div id="landing">
       <div id="temperature">
