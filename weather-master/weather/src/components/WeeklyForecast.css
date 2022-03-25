@@ -1,0 +1,12 @@
+.rest, .dropdown, .button{
+    
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button{
+
+  position: relative;
+  display: inline-block;
+
+}
