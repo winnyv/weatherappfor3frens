@@ -313,6 +313,14 @@ body {
 }
 
 
+.weeklyForecast {
+  margin-top: 20%;
+  text-align: center;
+}
+.rainForecast {
+  margin-top: -110%;
+  text-align: center;
+}
 
 
 
