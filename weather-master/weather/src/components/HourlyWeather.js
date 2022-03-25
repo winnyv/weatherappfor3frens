@@ -15,19 +15,18 @@ const HourlyWeather = () => {
     window.navigator.geolocation.getCurrentPosition(savePositionToState);
     const fetchData = async () => {
       const data = await axios.get(
-        `http://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_API_KEY_TWO}&q=${latitude},${longitude}&days=5`
+        `http://api.weatherapi.com/v1/forecast.json?key=e7628a883268430286e210346222403&q=${latitude},${longitude}&days=5`
       );
       setHour(data.data.forecast.forecastday[0].hour);
     };
     fetchData();
-  }, [latitude, longitude]);
+  }, [latitude, longitude, hour]);
 
   return (
     hour &&
     hour.map((h) => (
       <div>
-        Hour: {new Date(h.time).getHours() + 1}:00 Cel: {h.temp_c} Far:{" "}
-        {h.temp_f}
+        Hour: {new Date(h.time).getHours()}:00 Cel: {h.temp_c} Far: {h.temp_f}
       </div>
     ))
   );

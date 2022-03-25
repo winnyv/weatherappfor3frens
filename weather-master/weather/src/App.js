@@ -154,13 +154,15 @@ function App() {
                     <Home weatherData={weatherData} city={city} country={country}/>
                     <div className="rainForecast">
                         <RainForecast />
+                        
                     </div>
                 </SplideSlide>
 
                 {/* PAGE2 */}
                 <SplideSlide>
                     <div className="weeklyForecast">
-                        <WeeklyForecast /> 
+                        <WeeklyForecast />
+                         <HourlyWeather/>
                     </div>
                 </SplideSlide>
 
