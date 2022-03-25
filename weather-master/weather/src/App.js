@@ -147,25 +147,27 @@ function App() {
                     arrows: false,
                     pagination: true,
                 }}
-            >
+            >   
+                {/* PAGE 1 */}
                 <SplideSlide>
                     <Home weatherData={weatherData} city={city} country={country}/>
-                </SplideSlide>
-                <SplideSlide>
                     
                 </SplideSlide>
+
+                {/* PAGE2 */}
+                <SplideSlide>
+                    <WeeklyForecast /> 
+                    <RainForecast />
+                </SplideSlide>
+
+                {/* PAGE3 */}
                 <SplideSlide>
                     <Map />
                 </SplideSlide>
             </Splide>
             
                 <div>
-              <HourlyWeather />
-              {/* <WeeklyForecast /> */}
-            </div>
-            <div class = "forecast">
-                <WeeklyForecast /> 
-                <RainForecast />
+              {/* <HourlyWeather /> */}
             </div>
         </div>
         
